@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body { 
+    font-size: 100%;
+    font-family: arial, helvetica;
+   }
+   h1, h2{
+    color: #ff11cc;
+    margin: 1.5rem auto 2rem;
+    padding: 1rem 0;
+    text-align: center;
+   }
+   .lista-ul{
+    list-style: none;
+    margin: auto;
+    width: 50%;
+   }
+   .lista-ul li:nth-child(2n){
+    background: rgba(0,0,0,0.1);
+   }
+   .lista-ul li{
+    border: 1px solid white;
+    padding: 1rem .8rem;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s ease;
+   }
+   .lista-ul li:hover{
+    background: rgb(255,255,255);
+    border: 1px solid rgba(0,0,0,0.1);
+   }
+
+
+  </style>
+
+ </head>    
+ <body>
+
+  <h1>Creando Elementos HTML con Javascript Puro</h1>
+
+  <script type="text/javascript">
+
+   //Guardando las variables
+   var body = document.body;
+
+   var tag_element_padre = document.createElement("ul");
+
+   //Añadiendo una clase por joder
+   tag_element_padre.className = "lista-ul";
+
+   //El arreglo de contenido
+   var contenido = ["li numero 1", "li numero 2", "li numero 3", "li numero 4", "li numero 5"];
+
+   ///
+   for (var i = 0; i < contenido.length; i++) {
+
+    var tag_li = document.createElement("li");
+    var salto = document.createElement("br");
+    if(i === 0){
+     tag_li.innerText = contenido[i];
+     tag_element_padre.appendChild(tag_li);
+    }
+    else{
+     tag_li.innerText = contenido[i];
+     tag_element_padre.appendChild(tag_li);
+     tag_element_padre.insertBefore(salto, tag_li);
+    }
+
+   }
+   //finalmente agregandolo al DOM
+   body.appendChild(tag_element_padre);
+
+
+  </script>
+
+ </body>
+</html>

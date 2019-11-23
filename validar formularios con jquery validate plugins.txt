@@ -1,0 +1,4 @@
+Este plugins de jquery nos permite validar formularios de una forma sencilla, facil y completa
+
+jQuery Validation
+https://jqueryvalidation.org/

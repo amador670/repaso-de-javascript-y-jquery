@@ -1,0 +1,7 @@
+Añadir clases mediante JavaScript :D 
+
+______________________________________
+
+1.- setAttribute("class/id", "nombre_de_la_clase")
+2.- .className = "nombre_de_la_clase"  / .removeClass = "#"
+3.- .addClass ("nombre") - Se añade la clase sin el punto al iniciar las comillas

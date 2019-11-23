@@ -1,0 +1,23 @@
+/*$(document).ready(function(){
+  $("#btnEnviarFormulario").click(function(){
+    var nombre = $("#nombre").val(),
+        verificacionNombre = /^\S[a-zA-Z\s]+$/;
+
+    //USUARIO DE REGISTRO
+    if(verificacionNombre.test(nombre)){   
+      $("#msjUsuarioError").fadeOut(300);
+    } 
+    else if (nombre.length >= 0 && nombre.length < 4){
+      $("#msjUsuarioError").fadeIn(500);
+      return false;
+    }
+    else if(nombre.length > 15){
+      $("#msjUsuarioError").fadeIn(500);
+      return false;
+    }
+    else {
+      $("#msjUsuarioError").fadeIn(500);
+      return false;
+    }
+  });
+});*/

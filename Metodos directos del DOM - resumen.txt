@@ -1,0 +1,9 @@
+Acceso directo a los nodos - Clases DOM Document Object de JavaScript.
+Resumen.
+(Mas clases y propiedades en: http://www.w3schools.com/js/js_htmldom_document.asp)
+
+
+1.- document.getElementById(id) = Añade un elemento con el parametro id
+2.- document.getElementsByClassName(class)  = Añade un elemento con un parametro class
+3.- document.getElementsByTagName(<>ejemplo</>) = Añade una etiqueta de html (<p>, <li>, <span>, etc)
+4.- getElementsByName(name) = Añade un elemento que contenga el caracter "name" en un elemento html

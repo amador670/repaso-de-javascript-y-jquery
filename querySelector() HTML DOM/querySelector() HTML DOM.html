@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: left;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+   .estiloPre{
+    background-color:rgba(0, 0, 0, .6); 
+    color:#fff;        
+    padding: 5px;
+    border: 2px solid #009dff;
+    max-width: 100%;
+    width: 500px;
+   }
+  </style>
+
+ </head>    
+ <body>
+
+  <h2 class="estiloTitulo">Selector querySelector()</h2>
+  <button onclick="titulo()">Probar propiedad querySelector().</button>
+  <br><br>
+  <a href="https://www.w3schools.com/jsref/met_document_queryselector.asp">En w3schools aparecen muy buenos ejemplos.</a>
+
+  <p>Esta propiedad se encarga de obtener el primer elemento del documento con la clase indicada.</p>
+
+  <p>El método querySelector() devuelve el primer elemento que coincide con un selector CSS especificado en el documento.</p>
+
+  <p>Nota: El método querySelector() sólo devuelve el primer elemento que coincide con los selectores especificados. Para devolver todas las coincidencias, utilice el método querySelectorAll ().</p>
+
+  <p>Si el selector coincide con un ID en el documento que se utiliza varias veces (Observe que un "id" debe ser único dentro de una página y no debe utilizarse más de una vez), devuelve el primer elemento coincidente.</p>
+
+  <p><b>Ejemplo de la propiedad querySelector()</b></p>
+
+  <p class="estiloPre"> 
+   document.querySelector(.estiloTexto) 
+  </p>
+
+  <p>De esa forma indicamos que la propiedad &lt;h1&gt; titulo va a contener la clase .estiloTexto y al ser el primero mediante querySelector se le añade el estilo.</p>
+
+  <p><b>Nota Extra:</b> Si el primer elemento no contiene la clase añadida en "querySelector()" se encarga de buscar la siguiente, si esta ubicada de ultimo se añade la clase a ese elemento, si hay dos elementos con esa clase solo se añade al elemento que este de primero y si no encuentra la clase da como resultado null.</p>
+
+  <p><b>Esta propiedad</b> tambien funciona si la añadimos a una etiqueta, si la añadimos a una etiqueta en especifico que tiene una clase (ejemplo, document.querySelector("p.parrafo2") se añade a la etiqueta &lt;p&gt; con la clase parrafo2, </p>
+
+
+  <script type="text/javascript">      
+   function titulo(){
+    document.querySelector(".estiloTitulo").style.color="orange";
+    document.querySelector(".estiloTitulo").style.borderStyle="double";
+    document.querySelector(".estiloTitulo").style.borderColor="orange";
+    document.querySelector(".estiloTitulo").style.padding="5px";
+    document.querySelector(".estiloTitulo").style.width="500px";
+    document.querySelector(".estiloTitulo").style.maxWidth="100%";
+   }
+
+   document.querySelector(".estiloPre").addEventListener("click", function(){
+    document.querySelector(".estiloPre").style.color = "#fff";
+    document.querySelector(".estiloPre").style.background = "#009dff";
+    document.querySelector(".estiloPre").style.borderColor = "rgba(0, 0, 0, .6)";
+   }, false);
+  </script>
+
+ </body>
+</html>

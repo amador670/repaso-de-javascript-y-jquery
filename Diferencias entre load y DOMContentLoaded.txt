@@ -1,0 +1,7 @@
+Diferencias entre la propiedad "DOMContentLoaded" y "Load"
+
+1.- La propiedad "DOMContentLoaded" es ejecutado cuando el documento HTML ha sido completamente cargado y parseado (En este caso el DOM, se ejecuta al cargar todo el HTML, sin imagenes y archivos extras), sin esperar hojas de estilo, imagenes y subframes para finalizar la carga.  Un evento muy diferente a "load" que deberia ser usado solo para detectar una carga completa de la pagina. Es un error increiblemente popular usar load cuando DOMContentLoaded seria mucho mas apropiado y rapido
+
+2.- La propiedad "Load" se ejecuta cuando los recursos y sus propiedades dependientes han finalizado la carga, desde plugins, imagenes y demas archivos.
+
+Para concluir, El evento DOMContentLoaded se activa cuando el documento HTML se ha cargado y analizado completamente, sin esperar a que las hojas de estilo, imágenes y subtramas terminen de cargarse (el evento de load se puede utilizar para detectar una página completamente cargada).

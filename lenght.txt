@@ -1,0 +1,2 @@
+Propiedad length
+Retorna la cantidad de caracteres de un objeto String.

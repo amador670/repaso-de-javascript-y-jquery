@@ -1,0 +1,22 @@
+JavaScript Operadores logicos 
+
+&& Significa logical "and"
+|| Significa logical "or" 
+! Significa logical "not"
+___________________________________
+JavaScript comparadores de operaciones
+
+== Significa igual
+=== Significa igual en cuanto a valores y tipo 
+!= Significa no igual
+!== Significa no igual a valores y tipo
+___________________________________
+JavaScript asignadores de valores de variables
+Operador.    Examble.   Same Ss.
+=    	   x = y 	   x = y
++= 	   x += y 	   x = x + y
+-= 	   x -= y 	   x = x - y
+*= 	   x *= y 	   x = x * y
+/= 	   x /= y 	   x = x / y
+%= 	   x %= y 	   x = x % y
+

@@ -1,0 +1,1 @@
+<input type="text" value="el texto por defecto" onfocus="if (this.value=='el texto por defecto') this.value='';" onblur="if (this.value=='') this.value='el texto por defecto';" />

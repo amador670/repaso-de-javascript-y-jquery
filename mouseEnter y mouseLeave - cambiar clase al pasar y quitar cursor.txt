@@ -1,0 +1,5 @@
+Estas propiedades nos permiten modificar objetos, clases o estilos al añadir o quitar el cursor sobre cierto elemento.
+
+-La propiedad mouseenter es la encargada de añadir efectos o estilos al poner el cursor sobre un objeto
+
+-La propiedad mouseleave hace todo lo contrario, nos permite quitar efectos o estilos al quitar el cursor sobre un objeto

@@ -1,0 +1,7 @@
+Las diferencias entre 
+innerHTML: Muestra el texto e interpreta las etiquetas html, ejemplo:
+"<i>cursos</i> de programacion" lo interpreta y añade el efecto cursiva de html
+
+cambio:
+textContent: No interpreta los estilos html, ejemplo:
+"<i>cursos</i> de programacion" lo mostrara con las etiquetas y sin el efecto cursivo de html

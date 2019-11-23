@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuadros de colores manipulando el DOM </title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #contenedor {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(0, 153, 255);
+            padding: 30px;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        input[type="button"]{
+            padding: 3px;
+            margin-bottom: 15px;
+        }
+
+        #cuadros div {
+            width: 150px;
+            height: 150px;
+            margin: 15px;
+            display: inline-block;
+        }
+
+        .cuadradoAmarillo {
+            background: #f5f501;
+        }
+
+        .cuadradoAzul {
+            background: #0044ff;
+        }
+
+        .cuadradoRojo {
+            background: #ff4322;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <h1>Cuadros de colores</h1>
+
+        <input type="button" value="Crear cuadro amarillo" onclick="crearCuadro('cuadradoAmarillo')">
+        <input type="button" value="Crear cuadro azul" onclick="crearCuadro('cuadradoAzul')">
+        <input type="button" value="Crear cuadro rojo" onclick="crearCuadro('cuadradoRojo')">
+
+        <div id="cuadrosCreados"></div>
+    </div>
+
+    <script>
+        function crearCuadro(classColor) {
+            //Creamos la etiqueta
+            var elementoCuadrado = document.createElement("div");
+
+            //Insertamos contenido a la etiqueta creada
+            var elementoCuadradoContent = document.createTextNode("");
+
+            //Añadimos los valores, etiqueta padre (elementoCuadrado) le es añadido el hijo (appendChild) de nombre elementoCuadradoContent
+            elementoCuadrado.appendChild(elementoCuadradoContent);
+
+            //Añadimos la clase (estilo de css)
+            elementoCuadrado.className = classColor;
+
+            //Mostramos el elemento creado en la etiqueta con id "cuadrosCreados"
+            document.getElementById("cuadrosCreados").appendChild(elementoCuadrado);
+        }
+    </script>
+
+</body>
+
+</html>

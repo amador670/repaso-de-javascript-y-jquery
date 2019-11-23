@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+  </style>
+
+  <script type="text/javascript">
+   var nota1=parseInt(prompt("Ingrese su 1° primera nota", "")),
+       nota2=parseInt(prompt("Ingrese su 2° segunda nota", "")), 
+       nota3=parseInt(prompt("Ingrese su 3° tercera nota", "")),
+       pro=parseInt((nota1+nota2+nota3)/3); 
+
+   if (nota1 > 20 || nota2 > 20 || nota3 > 20 ) {
+    alert("Una de las notas ingresadas es mayor a 20. Ingrese las notas correctamente");
+    document.write("Error. Usted ingreso alguna de las tres notas de forma incorrecta, intente de nuevo")
+   }
+   else if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)){
+    alert("Oye... Tranquilo viejo, ingresa las notas de forma numérica!");
+    document.write("Ingrese las notas de forma numérica y no caracteres de otro tipo");
+   }
+   else if (pro>=21) {
+    document.write("Error. Usted ingreso alguna de las tres notas de forma incorrecta, intente otra vez"); 
+   }
+   else if(pro>=15) {
+    document.write("Usted aprobó con excelencia su nota con " + pro + " puntos");
+   }
+   else if (pro>=10) {
+    document.write("Usted aprobó con una nota regular con " + pro + " puntos");
+   }
+   else if (pro>=5) {
+    document.write("Usted reprobó con mala nota " + pro + " puntos");
+   }
+   else {
+    document.write("Usted fallo gravemente y perdió la nota con " + pro + " puntos");
+   }
+  </script>
+
+ </head>
+ <body>
+
+  <h1 style="color:#006cff;">Validacion de notas.</h1>
+  <h2 style="color:#006cff;">Notas del primer, segundo y tercer corte.</h2>
+
+  <p>Usamos la estructura condicional del "if y else" (si, no), pero como se formulan varias ordenes se añade <b>"else if"</b> de esta forma podemos añadir varios condicionales. Sino se cumple uno se cumple el otro y así sucesivamente va bajando los condicionales hasta que no se cumple ninguno y se aplica el condicional "else".
+
+ </body>
+</html>

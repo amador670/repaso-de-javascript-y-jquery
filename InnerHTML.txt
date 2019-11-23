@@ -1,0 +1,4 @@
+var elemento1=document.getElementById(arguments[0]);  //El nombre de la variable puede ser cualquiera, y en parentesis va el id o argumento
+elemento1.innerHTML=suma;  //añadimos el nombre de la variable.
+_______________________________________________________________________________
+InnerHTML indica que todo el código HTML que debe cargarse en el div. En este caso almacenamos en la variable suma todas las marcas necesarios para generar la lista ordenada.

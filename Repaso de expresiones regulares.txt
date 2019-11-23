@@ -1,0 +1,8 @@
+1.- Las expresiones regulares delimita su inicio con /^ y su fin con $/
+Por lo que una expresion regular tendria forma: 
+
+/^ expr regular $/
+
+2.- La letra o número se expresa mediante el carácter \w. 
+
+3.- Para asegurarnos de que la letra o número aparece al menos una vez utilizaremos el modificador +.

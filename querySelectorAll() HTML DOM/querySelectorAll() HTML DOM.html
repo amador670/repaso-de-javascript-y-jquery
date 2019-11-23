@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ejercicios de JavaScript</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <style>
+   body { 
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px;
+    font-family: comic sans ms;
+   }
+   .estiloPre{
+    background-color:rgba(0, 0, 0, .6); 
+    color:#fff;        
+    padding: 5px;
+    max-width: 100%;
+    width: 870px;
+   }
+  </style>
+
+ </head>    
+ <body>
+
+  <h1 style="color:orange;">querySelectorAll()</h1>
+  <h1 style="color:red">Provando JavaScript</h1>
+  <p><a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp">En w3schools hay buenos ejemplos</a></p>
+
+  <button onclick="agregarEstilos()">Agregar Estilos</button>
+  <button onclick="eliminarEstilos()">Quitar Estilos</button>
+
+  <p>El método querySelectorAll() devuelve todos los elementos del documento que coinciden con un selector CSS especificado, como un objeto NodeList estático.</p>
+
+  <p>El objeto NodeList representa una colección de nodos. Se puede acceder a los nodos por números de índice. El índice empieza en 0.</p>
+
+  <p>Sugerencia: Puede utilizar la propiedad length del objeto NodeList para determinar el número de elementos que coincide con el selector especificado, luego puede recorrer todos los elementos y extraer la información que desea.</p>
+
+  <p>Este metodo especifica uno o más selectores CSS para que coincidan con el elemento. Éstos se utilizan para seleccionar elementos HTML basados en su id, clases, tipos, atributos, valores de atributos, etc.</p>
+
+  <p><b>Nota: </b>Para selectores múltiples, separe cada selector con una coma.</p>
+
+  <p><b>Ejemplo:</b></p>
+
+  <pre class="estiloPre">
+    // Get all &lt;p&gt; elements in the document
+    var x = document.querySelectorAll("p");
+
+    // Set the background color of the first &lt;p&gt; element
+    x[0].style.backgroundColor = "red";</pre>
+
+  <p><b>Como seleccionar todos los elementos con este metodo</b></p>
+
+  <pre class="estiloPre">
+      var x = document.querySelectorAll(".example");
+      var i;
+      for (i = 0; i &lt; x.length; i++) {
+      x[i].style.backgroundColor = "red";
+      }</pre>
+
+  <script type="text/javascript">
+
+   function agregarEstilos(){
+    var elementos = document.querySelectorAll("pre, h1"); 
+    for (var i=0; i<elementos; i++){
+     elementos[i].style.border="2px";
+     elementos[i].style.borderColor="#009dff";
+     elementos[i].style.borderStyle="solid";
+    }
+    document.querySelector("h1").style.padding="15px";
+    document.querySelector("h1").style.width="870px";
+   }
+
+   function eliminarEstilos(){
+    var removerElementos = document.querySelectorAll("pre, h1");        
+    for (var i=0; i<removerElementos.length; i++){
+     //Si no existe el borde, no hay que quitar el color y/o ancho.
+     removerElementos[i].style.border="none";
+    }
+    document.querySelector("h1").style.padding="0px";
+   }
+
+   var nodoPrincipal = document.querySelectorAll("p");
+   for(var ciclo = 0; ciclo < nodoPrincipal.length; ciclo++){
+    document.querySelectorAll("p")[ciclo].style.color="#222222";
+   }
+
+
+  </script>
+
+ </body>
+</html>

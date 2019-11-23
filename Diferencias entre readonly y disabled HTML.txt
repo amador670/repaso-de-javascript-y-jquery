@@ -1,0 +1,6 @@
+Los atributos readonly y disable son muy familiares, ambos se usan en el fromulario (from) y modifican la opcion editar. Evitan escribir en el value de el input element. Ellos tienen una gran diferencia, el valor readonly es enviado al servidor al presionar el boton submit del formulario; Mientras que el valor disabled no envia el valor al servidor 
+
+readonly = Enviar el valor al servidor
+disabled = No envia el valor al servidor
+
+Read more: http://html.com/attributes/input-readonly/#ixzz4V6rdKEew

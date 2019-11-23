@@ -1,0 +1,2 @@
+parseInt = Convierte a numeros enteros.
+parseFloat = Convierte a numeros con decimales.

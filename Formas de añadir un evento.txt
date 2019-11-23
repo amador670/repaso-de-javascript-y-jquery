@@ -1,0 +1,26 @@
+Formas de añadir un evento:
+
+1.-   <a href="link.html" onclick="alert('Bienvenido!!');">Entrar</a>
+
+2.-  <a href="link.html" onclick="welcome();">Entrar</a>
+
+    <script type="text/javascript">
+    function welcome() {
+       alert('Welcome!!!');
+    }
+    </script>
+
+3.-     <a href="link.html" id="bt">Entrar</a>
+
+    <script type="text/javascript">
+    document.getElementById("bt").onclick = function () {
+        alert("Welcome!!!");   
+    }
+    </script>
+
+4.-<script type="text/javascript">
+    document.getElementById("bt").addEventListener('click', welcome, false);
+    function welcome() {
+        alert("Welcome!!!");   
+    }
+    </script>

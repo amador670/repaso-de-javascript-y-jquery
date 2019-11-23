@@ -1,0 +1,21 @@
+Javascript: Ejecutar una función en la carga de página
+
+Existen al menos dos formas:
+
+1.- Mediante el atributo onload en el elemento body. El valor de dicho atributo será la función Javascript que se quiera ejecutar.
+
+2.- En el archivo Javascript que se vincule desde la página, mediante window.onload, y mencionando a continuación la función que se desea ejecutar.
+
+3.- Cargarla mediante un adEventListener("load", function, false);
+
+Un ejemplo del uso del onload:
+
+1.- <body onload="funcion_a_ejecutar(parametro)">[...]</body>
+
+2.- Un ejemplo para hacerlo desde un archivo Javascript:
+window.onload = funcion_a_ejecutar;
+
+3.- window.addEventListener('load', ejemplo, false);
+function ejemplo() {
+.........................
+}

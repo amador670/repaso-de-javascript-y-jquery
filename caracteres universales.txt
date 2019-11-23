@@ -1,0 +1,3 @@
+\n para un salto de línea, 
+\t para un tabulador,
+\\ para una \ 

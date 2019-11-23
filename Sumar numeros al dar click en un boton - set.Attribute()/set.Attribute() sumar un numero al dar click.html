@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prueba de JavaScript curso gratis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+   body {
+    font-size:20px; 
+    text-align: justify;
+    margin: 50px;
+   }  
+
+   .resultadoBoton{
+    color: #ff8800;
+    font-family: Comic Sans MS;
+    font-size: 25px;
+   }
+  </style>
+ </head>
+ <body>
+
+  <input type="button" id="botonCantidad" value="Cantidad que aumenta al dar click">
+  <h3 id="contador">0</h3>
+
+  <script type="text/javascript">
+   //No funciona añadir un setAttribute a una variable, tiene que ser a un document del DOM
+   window.onload = document.getElementById("contador").setAttribute("class", "resultadoBoton");
+
+   var boton = document.getElementById("botonCantidad");
+   boton.addEventListener("click", function inicio(){
+
+    var modificarValor = parseInt(document.getElementById("contador").innerHTML);
+    modificarValor++;
+    document.getElementById("contador").innerHTML = modificarValor;
+   });
+  </script>
+
+ </body>
+</html>

@@ -1,0 +1,60 @@
+Ejemplo:
+
+1- function(){ //Se puede añadir un onload para que el codigo se aplique al cargar la pagina
+	var ancho = window.innerWidth
+	if (ancho < 480){
+		//Codigo
+	}
+}
+
+2- window.onload = function(){
+	if(screen.width > 480){
+		//Codigo
+	}
+}
+
+3- window.load = function(){
+	if (window.matchMedia("(max-width: 408px)").matches) {
+		//Codigo
+	} 
+}
+
+4- window.load = function(){
+	if (window.matchMedia("only screen and (max-width: 408px)").matches) {
+		//Codigo
+	} 
+}
+
+5- window.load = function(){
+	var ancho = window.matchMedia;
+	if(ancho < 480){
+		//Codigo
+	} 
+}
+
+6. - <!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">click aqui</button>
+
+<script>
+function myFunction() {
+if (window.matchMedia("screen and (min-width: 660px)").matches) { 
+//Si tiene menos de 660px se ejecuta el "else", si tiene mas de 660px se ejecuta el condicional verdadero
+document.body.style.backgroundColor = "pink";
+} else {
+document.body.style.backgroundColor = "yellow";
+}
+}
+</script>
+
+</body>
+</html>
+
+___________
+El método window.matchMedia () devuelve un objeto MediaQueryList que representa los resultados de la cadena de consulta de medios CSS especificada.
+
+El valor del método matchMedia () puede ser cualquiera de las características de medios de la regla CSS @media, como min-height, min-width, orientation, etc.
+
+El objeto MediaQueryList tiene dos propiedades y dos métodos:
